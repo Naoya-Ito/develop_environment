@@ -1,5 +1,10 @@
 # 環境設定
 export PATH=$PATH:~/.gem/ruby/1.8/bin/:/Users/n_itou/pear/bin
+export PATH="/Users/n_itou/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems:$PATH"
+export PATH="/usr/bin/rails:$PATH"
+export PATH=/usr/local/bin:$PATH
+
+alias ruby='/usr/local/Cellar/ruby/2.1.2_2/bin/ruby'
 
 # 色
 export CLICOLOR=1
@@ -55,8 +60,6 @@ if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
 export LANG=ja_JP.UTF-8
 
 # aliases
-alias java='java -Dfile.encoding=UTF-8'
-alias javac='javac -J-Dfile.encoding=utf-8'
 alias vim='env LANG=ja_JP.UTF-8 vim' 
 alias ls='ls -FG'
 
@@ -126,3 +129,6 @@ add-zsh-hook precmd _precmd_anim
 
 # cat
 alias cat='~/local/bin/cat.sh'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
